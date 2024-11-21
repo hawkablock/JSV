@@ -1,5 +1,5 @@
 app:
-  applicationId: ${APP_ID:b04badbc-b0b9-4988-be65-2ebc25e507d5}
+  applicationId: ${APP_ID:200e3e5f-ac25-4507-8865-e1b1055c4339}
   env: ${APP_ENV:Development}
   host: ${APP_HOST:https://localhost:9000}
   openApiConf:
@@ -14,7 +14,7 @@ app:
       usernameField: username
       passwordField: password
       scanUsername: "janesmith"
-      scanPassword: "password"
+      scanPassword: "${APP_PASSWORD:password}"
     tokenAuthorization:
       type: HEADER
       value: Authorization
